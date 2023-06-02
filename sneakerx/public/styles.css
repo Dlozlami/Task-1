@@ -1,27 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lato:wght@900&family=Roboto:wght@700&display=swap');
 
-html{
-    box-sizing: border-box;
-}
-
 body{
     background-image: url('desk_bg.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    box-sizing: inherit;
     margin: 0px;
+    font-family: 'Roboto';
 }
 
-nav{
-
-    font-family: 'Roboto';
+main{
+    display: flex;
 }
 
 .ButtonUnboxed{
     border: none;
     background-color: transparent;
     cursor: pointer;
-    display: inline;
 }
 
 .invertHover:hover{
@@ -37,13 +31,6 @@ a{
     color: black;
 }
 
-article{
-    
-    position: absolute;
-    bottom: 30px;
-    font-family: 'Roboto';
-}
-
 .brandIcons{
     width:150px;
     display: block;
@@ -52,6 +39,7 @@ article{
     margin-right: auto;
 }
 
-div{
-    display: inline-block;
+
+div, img{
+    border: 3px red solid;
 }
