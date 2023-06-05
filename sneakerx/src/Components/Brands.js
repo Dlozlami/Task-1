@@ -3,17 +3,23 @@ import { useState } from "react";
 export default function Brands()
 {
         const myStyle = {
-            width:'20%',
-            textAlign:'center'     
+            width:'20vw',
+            alignItems:"end",
+            justifyContent:'space-between',
+            paddingBottom:'5vh'
         }
     
         return(
-            <div  style={myStyle}>
-                {Icons('nike.png','Nike logo')}
-                {Icons('adidas.png','Adidas logo')}
-                {Icons('newbalance.png','New Balance logo')}
-                {Socials({textDecoration:'none',display:'inline',marginRight:'10px'},'https://za.pinterest.com','Pinterest')}
-                {Socials({textDecoration:'none',display:'inline',marginLeft:'10px'},"https://www.facebook.com/",'Facebook')}
+            <div  style={myStyle} className="flexContainer">
+                <div className="flexContainer">
+                    {Icons('nike.png','Nike logo')}
+                    {Icons('adidas.png','Adidas logo')}
+                    {Icons('newbalance.png','New Balance logo')}
+                </div>
+                <div style={{display:'flex',marginTop:'30vh',fontFamily: 'Concert One'}}>
+                    {Socials({marginRight:'10px'},'https://za.pinterest.com','Pinterest')}
+                    {Socials({marginLeft:'10px'},"https://www.facebook.com/",'Facebook')}
+                </div>
             </div>
         );
 }
@@ -39,9 +45,7 @@ export default function Brands()
         const myStyle = style;
 
         return(
-            <a href={ref} style={myStyle} >
-                {name}
-            </a>
+            <button className="ButtonUnboxed" style={myStyle}>{name}</button>
         );
     }
 

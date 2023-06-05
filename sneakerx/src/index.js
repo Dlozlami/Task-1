@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './w3pro.css';
+//import './w3pro.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

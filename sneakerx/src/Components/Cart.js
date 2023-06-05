@@ -1,15 +1,9 @@
-
 export default function Cart({cart})
 {
 
-    const myStyle = {
-        marginLeft:'30px',
-        marginRight:'30px'
-    }
-
     return(
-        <button className="ButtonUnboxed FloatRight" style={myStyle}>
-        Cart {cart}
-        </button>
+        <div style={{display:'flex',cursor:'pointer',alignItems:'center'}}>
+            <button className="ButtonUnboxed" style={{width:'10vw'}}>Cart {cart}</button>
+        </div>
     );
 }
